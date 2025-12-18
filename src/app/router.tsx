@@ -1,11 +1,21 @@
-import { LoginPage } from "@/pages/auth/LoginPage";
+import { LoginPage } from "@/app/pages/auth/LoginPage";
 import { createBrowserRouter } from "react-router";
 import App from "./App";
+import { LandingLayout } from "./layouts/LandingLayout";
+import { LandingPage } from "./pages/landing/LandingPage";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
     element: <App />,
-    children: [{ path: "/login", element: <LoginPage /> }],
+    children: [
+      {
+        element: <LandingLayout />,
+        children: [{ index: true, element: <LandingPage /> }],
+      },
+      {
+        path: "/login",
+        element: <LoginPage />,
+      },
+    ],
   },
 ]);
