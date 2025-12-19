@@ -28,12 +28,12 @@ export const LandingHero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter mb-8"
+            className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter mb-6"
           >
-            Belajar Sekali,
+            Dulu Tidak Tahu.
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">
-              Ingat Selamanya
+              Sekarang Lupa.
             </span>
           </motion.h1>
 
@@ -41,11 +41,19 @@ export const LandingHero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-lg md:text-2xl text-purple-100/80 max-w-3xl mb-12"
+            className="text-2xl md:text-3xl text-white/90 font-bold mb-6 max-w-4xl"
           >
-            Gunakan algoritma{" "}
-            <span className="text-amber-400 font-bold">Spaced Repetition</span>{" "}
-            untuk mengubah memori jangka pendek menjadi aset seumur hidup.
+            Terasa familiar, bukan? <br className="hidden md:block" />
+            <span className="text-purple-200">Lupa itu sistematis - dan bisa dikendalikan.</span>
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg md:text-xl text-purple-100/70 max-w-2xl mb-10 leading-relaxed"
+          >
+            Pelajari bagaimana <span className="text-amber-400 font-bold">Dura</span> membantu menghadapi lupa, agar ilmu dapat bertahan lama.
           </motion.p>
 
           <motion.div

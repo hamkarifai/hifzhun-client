@@ -2,10 +2,10 @@ export const LandingHowItWorks = () => {
   return (
     <section
       id="how"
-      className="py-24 bg-linear-to-b from-slate-900 to-slate-950 text-white relative overflow-hidden"
+      className="py-24 bg-[#0f0720] text-white relative overflow-hidden border-t border-white/5"
     >
       {/* Decorative background */}
-      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-purple-900/20 via-slate-950 to-slate-950 pointer-events-none"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-purple-900/10 via-[#0f0720] to-[#0f0720] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col lg:flex-row gap-20 items-center">
@@ -17,7 +17,7 @@ export const LandingHowItWorks = () => {
                   Ingatan Super
                 </span>
               </h2>
-              <p className="text-slate-400 text-lg leading-relaxed">
+              <p className="text-purple-200/80 text-lg leading-relaxed">
                 Kami tidak menggunakan magic. Kami menggunakan data. Setiap
                 interaksi Anda dicatat untuk memprediksi momen "lupa" yang
                 presisi.
@@ -45,19 +45,19 @@ export const LandingHowItWorks = () => {
                 <div key={idx} className="flex gap-6 group">
                   <div className="flex flex-col items-center">
                     <div
-                      className={`w-12 h-12 rounded-xl ${step.color} flex items-center justify-center font-bold text-slate-900 shadow-[0_0_20px_rgba(255,255,255,0.2)] z-10 group-hover:scale-110 transition-transform`}
+                      className={`w-12 h-12 rounded-xl ${step.color} flex items-center justify-center font-bold text-[#0f0720] shadow-[0_0_20px_rgba(255,255,255,0.2)] z-10 group-hover:scale-110 transition-transform`}
                     >
                       {idx + 1}
                     </div>
                     {idx !== 2 && (
-                      <div className="w-0.5 h-full bg-slate-800 my-2 group-hover:bg-slate-700 transition-colors"></div>
+                      <div className="w-0.5 h-full bg-white/10 my-2 group-hover:bg-white/20 transition-colors"></div>
                     )}
                   </div>
                   <div className="pt-2">
                     <h4 className="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
                       {step.title}
                     </h4>
-                    <p className="text-slate-400 leading-relaxed">
+                    <p className="text-purple-200/60 leading-relaxed">
                       {step.desc}
                     </p>
                   </div>
@@ -68,16 +68,16 @@ export const LandingHowItWorks = () => {
 
           {/* Visual Graph/Demo */}
           <div className="lg:w-1/2 w-full">
-            <div className="relative bg-slate-800/50 backdrop-blur-xl rounded-3xl p-8 border border-slate-700/50 shadow-2xl">
+            <div className="relative bg-[#1a102e]/50 backdrop-blur-xl rounded-3xl p-8 border border-white/10 shadow-2xl">
               <div className="absolute -top-10 -right-10 w-40 h-40 bg-purple-500/30 rounded-full blur-3xl animate-pulse"></div>
 
               <div className="space-y-6">
-                <div className="flex justify-between items-center border-b border-slate-700/50 pb-4">
-                  <span className="text-sm font-medium text-slate-400 uppercase tracking-wider">
+                <div className="flex justify-between items-center border-b border-white/10 pb-4">
+                  <span className="text-sm font-medium text-purple-200/60 uppercase tracking-wider">
                     Kurva Melupakan (Forgetting Curve)
                   </span>
                   <div className="flex gap-3">
-                    <div className="flex items-center gap-2 text-xs text-slate-400">
+                    <div className="flex items-center gap-2 text-xs text-purple-200/60">
                       <div className="w-2 h-2 rounded-full bg-red-500"></div>
                       Normal
                     </div>
@@ -101,7 +101,7 @@ export const LandingHowItWorks = () => {
                       y1="100"
                       x2="400"
                       y2="100"
-                      stroke="#334155"
+                      stroke="rgba(255,255,255,0.1)"
                       strokeWidth="1"
                       strokeDasharray="4 4"
                     />
@@ -110,7 +110,7 @@ export const LandingHowItWorks = () => {
                       y1="50"
                       x2="400"
                       y2="50"
-                      stroke="#334155"
+                      stroke="rgba(255,255,255,0.1)"
                       strokeWidth="1"
                       strokeDasharray="4 4"
                     />

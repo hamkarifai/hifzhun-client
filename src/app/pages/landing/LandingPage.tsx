@@ -8,7 +8,7 @@ import { LandingCTA } from "@/components/landing/LandingCTA";
 
 export const LandingPage = () => {
   return (
-    <>
+    <div className="bg-[#0f0720] min-h-screen text-white">
       <LandingHero />
       <LandingProblem />
       <LandingFeatures />
@@ -16,6 +16,6 @@ export const LandingPage = () => {
       <LandingUserPersonas />
       <LandingFAQ />
       <LandingCTA />
-    </>
+    </div>
   );
 };

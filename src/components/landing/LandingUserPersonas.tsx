@@ -2,8 +2,8 @@ import { Clock, GraduationCap, Users } from "lucide-react";
 
 export const LandingUserPersonas = () => {
   return (
-    <section className="py-24 container mx-auto px-6">
-      <h2 className="text-3xl font-bold text-center text-slate-900 mb-16">
+    <section className="py-24 container mx-auto px-6 bg-[#0f0720] border-t border-white/5">
+      <h2 className="text-3xl font-bold text-center text-white mb-16">
         Dibuat untuk Pembelajar Jangka Panjang
       </h2>
       <div className="grid md:grid-cols-3 gap-6">
@@ -31,7 +31,7 @@ export const LandingUserPersonas = () => {
           },
         ].map((item, idx) => (
           <div key={idx} className="group cursor-default">
-            <div className="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center text-center relative overflow-hidden">
+            <div className="bg-[#1a102e] p-8 rounded-[2rem] border border-white/10 shadow-lg hover:shadow-xl transition-all h-full flex flex-col items-center text-center relative overflow-hidden">
               <div
                 className={`absolute top-0 left-0 w-full h-2 ${item.bg}`}
               ></div>
@@ -40,10 +40,10 @@ export const LandingUserPersonas = () => {
               >
                 {item.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-3">
+              <h3 className="text-xl font-bold text-white mb-3">
                 {item.title}
               </h3>
-              <p className="text-slate-500 leading-relaxed">{item.desc}</p>
+              <p className="text-purple-200/60 leading-relaxed">{item.desc}</p>
             </div>
           </div>
         ))}

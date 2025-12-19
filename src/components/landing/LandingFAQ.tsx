@@ -8,9 +8,9 @@ export const LandingFAQ = () => {
     setOpenFaqIndex(openFaqIndex === index ? null : index);
   };
   return (
-    <section id="faq" className="py-24 bg-slate-50 border-t border-slate-200">
+    <section id="faq" className="py-24 bg-[#0f0720] border-t border-white/5">
       <div className="container mx-auto px-6 max-w-3xl">
-        <h2 className="text-3xl font-bold text-center text-slate-900 mb-12">
+        <h2 className="text-3xl font-bold text-center text-white mb-12">
           Sering Ditanyakan
         </h2>
         <div className="space-y-4">
@@ -30,18 +30,18 @@ export const LandingFAQ = () => {
           ].map((item, idx) => (
             <div
               key={idx}
-              className="group border border-slate-200 rounded-2xl bg-white overflow-hidden transition-colors hover:border-purple-300"
+              className="group border border-white/10 rounded-2xl bg-[#1a102e] overflow-hidden transition-colors hover:border-purple-500/30"
             >
               <button
                 onClick={() => toggleFaq(idx)}
-                className="w-full px-8 py-6 flex items-center justify-between text-left font-bold text-slate-900 hover:bg-slate-50/50 transition-colors"
+                className="w-full px-8 py-6 flex items-center justify-between text-left font-bold text-white hover:bg-white/5 transition-colors"
               >
                 <span className="text-lg">{item.q}</span>
                 <div
-                  className={`w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center transition-transform duration-300 ${
+                  className={`w-8 h-8 rounded-full flex items-center justify-center transition-transform duration-300 ${
                     openFaqIndex === idx
-                      ? "rotate-180 bg-purple-100 text-purple-600"
-                      : "text-slate-400"
+                      ? "rotate-180 bg-purple-500 text-white"
+                      : "bg-white/5 text-purple-200/40"
                   }`}
                 >
                   <ChevronDown className="w-5 h-5" />
@@ -54,8 +54,8 @@ export const LandingFAQ = () => {
                     : "max-h-0 opacity-0"
                 }`}
               >
-                <div className="px-8 pb-8 pt-0 text-slate-600 leading-relaxed">
-                  <p className="pt-2 border-t border-slate-100">{item.a}</p>
+                <div className="px-8 pb-8 pt-0 text-purple-200/70 leading-relaxed">
+                  <p className="pt-2 border-t border-white/5">{item.a}</p>
                 </div>
               </div>
             </div>
