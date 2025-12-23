@@ -9,7 +9,7 @@ export const LandingHero = () => {
       <ParticleBackground />
 
       {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0f0720]/80 via-transparent to-[#0f0720] z-0 pointer-events-none" />
+      <div className="absolute inset-0 bg-linear-to-b from-[#0f0720]/80 via-transparent to-[#0f0720] z-0 pointer-events-none" />
 
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10 pt-20">
@@ -21,9 +21,9 @@ export const LandingHero = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter mb-6"
           >
-            Dulu <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">Tidak Tahu</span>.
+            Dulu <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-amber-200">Tidak Tahu</span>.
             <br />
-            Sekarang <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">Lupa</span>.
+            Sekarang <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-amber-200">Lupa</span>.
           </motion.h1>
 
           <motion.p
@@ -33,8 +33,8 @@ export const LandingHero = () => {
             className="text-2xl md:text-3xl text-white/90 font-bold mb-6 max-w-4xl"
           >
             Terasa familiar, bukan? <br className="hidden md:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">Lupa itu sistematis</span> -{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">dan bisa dikendalikan.</span>
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-amber-200">Lupa itu sistematis</span> -{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-amber-200">dan bisa dikendalikan.</span>
           </motion.p>
 
           <motion.p

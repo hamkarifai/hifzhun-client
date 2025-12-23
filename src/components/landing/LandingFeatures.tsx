@@ -10,7 +10,7 @@ export const LandingFeatures = () => {
       <div className="text-center max-w-4xl mx-auto mb-20">
         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
           Kerugian ini sebenarnya <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-orange-400">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-amber-400 to-orange-400">
             bisa dicegah.
           </span>
         </h2>
@@ -52,7 +52,7 @@ export const LandingFeatures = () => {
         </div>
 
         {/* Right Column: The Solution (Dura) */}
-        <div className="bg-gradient-to-br from-[#2d1b4e] to-[#1a102e] p-10 rounded-[2.5rem] border border-purple-500/20 shadow-2xl shadow-purple-900/20 relative overflow-hidden h-full flex flex-col justify-center">
+        <div className="bg-linear-to-br from-[#2d1b4e] to-[#1a102e] p-10 rounded-[2.5rem] border border-purple-500/20 shadow-2xl shadow-purple-900/20 relative overflow-hidden h-full flex flex-col justify-center">
           <div className="absolute top-0 right-0 w-64 h-64 bg-purple-500/10 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
 
           <div className="relative z-10">

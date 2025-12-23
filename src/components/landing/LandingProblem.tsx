@@ -73,7 +73,7 @@ export const LandingProblem = () => {
         <div className="mb-20 text-center max-w-2xl mx-auto">
           <span className="text-purple-400 font-semibold tracking-wider text-sm uppercase mb-3 block">Reality Check</span>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white leading-tight">
-           Ketika Belajar Berakhir dengan <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Dilupakan</span>
+           Ketika Belajar Berakhir dengan <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 to-pink-400">Dilupakan</span>
           </h2>
         </div>
 
@@ -84,7 +84,7 @@ export const LandingProblem = () => {
               className={`group relative min-h-80 p-8 md:p-10 rounded-[2rem] bg-[#130b24] border border-white/5 hover:border-white/10 transition-all duration-500 hover:-translate-y-2 overflow-hidden flex flex-col justify-between ${item.delay}`}
             >
               {/* Hover Gradient Glow */}
-              <div className={`absolute top-0 right-0 w-75 h-75 bg-gradient-to-bl ${getGradient(item.color)} rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none translate-x-1/3 -translate-y-1/3`}></div>
+              <div className={`absolute top-0 right-0 w-75 h-75 bg-linear-to-bl ${getGradient(item.color)} rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none translate-x-1/3 -translate-y-1/3`}></div>
               
               {/* Large Number Background */}
               <div className="absolute -bottom-4 -right-4 text-[12rem] font-bold text-white/2 group-hover:text-white/4 transition-colors duration-500 select-none leading-none">
@@ -94,7 +94,7 @@ export const LandingProblem = () => {
               {/* Icon Container with 3D Effect */}
               <div className={getIconStyles(item.color)}>
                 {/* Inner Shine */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-tr from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <item.icon className="w-8 h-8 relative z-10 drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] transition-transform duration-500 group-hover:rotate-6" />
               </div>
 
@@ -104,7 +104,7 @@ export const LandingProblem = () => {
                   {item.text}
                 </p>
                 <div className="flex items-center gap-3">
-                  <span className={`text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-${item.color}-400 to-${item.color}-200`}>
+                  <span className={`text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-linear-to-r from-${item.color}-400 to-${item.color}-200`}>
                     {item.highlight}
                   </span>
                 </div>
