@@ -1,4 +1,4 @@
-import { ArrowRight, Zap } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
 import { ParticleBackground } from "@/components/three/ParticleBakcground";
 
@@ -14,15 +14,6 @@ export const LandingHero = () => {
       {/* Content */}
       <div className="container mx-auto px-6 relative z-10 pt-20">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md text-purple-200 text-xs font-bold mb-8 uppercase tracking-wider"
-          >
-            <Zap className="w-3.5 h-3.5 text-amber-400 fill-amber-400" />
-            <span>Revolusi Cara Belajar Anda</span>
-          </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
@@ -30,11 +21,9 @@ export const LandingHero = () => {
             transition={{ duration: 0.8 }}
             className="text-5xl md:text-7xl lg:text-8xl font-black text-white tracking-tighter mb-6"
           >
-            Dulu Tidak Tahu.
+            Dulu <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">Tidak Tahu</span>.
             <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">
-              Sekarang Lupa.
-            </span>
+            Sekarang <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">Lupa</span>.
           </motion.h1>
 
           <motion.p
@@ -44,7 +33,8 @@ export const LandingHero = () => {
             className="text-2xl md:text-3xl text-white/90 font-bold mb-6 max-w-4xl"
           >
             Terasa familiar, bukan? <br className="hidden md:block" />
-            <span className="text-purple-200">Lupa itu sistematis - dan bisa dikendalikan.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">Lupa itu sistematis</span> -{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-amber-200">dan bisa dikendalikan.</span>
           </motion.p>
 
           <motion.p
@@ -53,7 +43,8 @@ export const LandingHero = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg md:text-xl text-purple-100/70 max-w-2xl mb-10 leading-relaxed"
           >
-            Pelajari bagaimana <span className="text-amber-400 font-bold">Dura</span> membantu menghadapi lupa, agar ilmu dapat bertahan lama.
+            Pelajari bagaimana <span className="text-amber-400 font-bold">Dura</span> membantu membantu  <span className="text-amber-400 font-bold">Anda</span> menghadapi  <span className="text-amber-400 font-bold">Lupa</span>,
+agar perjuangan Anda tidak hanya menjadi sebuah kenangan.
           </motion.p>
 
           <motion.div
@@ -63,7 +54,7 @@ export const LandingHero = () => {
             className="flex gap-5"
           >
             <button className="px-10 py-5 rounded-2xl bg-purple-600 text-white font-bold flex items-center gap-3">
-              Mulai Belajar
+              Pelajari Selengkapnya
               <ArrowRight />
             </button>
           </motion.div>
