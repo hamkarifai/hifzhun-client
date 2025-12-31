@@ -1,9 +1,28 @@
+/* ======================================================
+   TAILWIND CORE
+====================================================== */
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* ======================================================
+   DARK VARIANT
+====================================================== */
 @custom-variant dark (&:is(.dark *));
 
+/* ======================================================
+   DESIGN TOKENS (SOURCE OF TRUTH)
+   → JANGAN pakai ini langsung di HTML
+   → Dipakai lewat utility Tailwind
+====================================================== */
 @theme inline {
+  /* ---------- FONT SYSTEM ---------- */
+  --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-display: 'Cinzel', serif;
+
+  /* ---------- RADIUS ---------- */
+  --radius: 0.75rem;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -12,50 +31,39 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
 
+  /* ---------- COLOR MAPPING (TAILWIND) ---------- */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --color-card: var(--card);
   --color-card-foreground: var(--card-foreground);
+
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
 
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
 
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
 
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
   --color-destructive: var(--destructive);
+
   --color-border: var(--border);
   --color-input: var(--input);
   --color-ring: var(--ring);
-
-  --color-chart-1: var(--chart-1);
-  --color-chart-2: var(--chart-2);
-  --color-chart-3: var(--chart-3);
-  --color-chart-4: var(--chart-4);
-  --color-chart-5: var(--chart-5);
-
-  --color-sidebar: var(--sidebar);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* =========================
-   🌤 LIGHT MODE
-   ========================= */
+/* ======================================================
+   LIGHT MODE — BAQEN DEFAULT
+====================================================== */
 :root {
-  --radius: 0.75rem;
-
   --background: oklch(1 0 0);
   --foreground: oklch(0.16 0 0);
 
@@ -65,46 +73,31 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.16 0 0);
 
-  /* 🔮 PRIMARY – Ungu Cerah */
+  /* PRIMARY — Ungu BAQEN */
   --primary: oklch(0.65 0.26 292);
   --primary-foreground: oklch(0.99 0 0);
 
-  --secondary: oklch(0.95 0.015 292);
-  --secondary-foreground: oklch(0.28 0.03 292);
+  /* SECONDARY — Biru reflektif */
+  --secondary: oklch(0.62 0.18 255);
+  --secondary-foreground: oklch(0.98 0 0);
+
+  /* ACCENT — Emas makna */
+  --accent: oklch(0.75 0.18 85);
+  --accent-foreground: oklch(0.22 0.02 85);
 
   --muted: oklch(0.96 0.01 292);
   --muted-foreground: oklch(0.46 0.03 292);
-
-  --accent: oklch(0.97 0.02 292);
-  --accent-foreground: oklch(0.22 0.02 292);
 
   --destructive: oklch(0.6 0.25 25);
 
   --border: oklch(0.92 0 0);
   --input: oklch(0.92 0 0);
   --ring: oklch(0.7 0.1 292);
-
-  /* 📊 Chart */
-  --chart-1: oklch(0.65 0.26 292); /* ungu */
-  --chart-2: oklch(0.62 0.18 255); /* biru */
-  --chart-3: oklch(0.75 0.18 85);  /* emas */
-  --chart-4: oklch(0.58 0.2 330);  /* magenta */
-  --chart-5: oklch(0.55 0.15 200); /* cyan */
-
-  /* 📚 Sidebar */
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.16 0 0);
-  --sidebar-primary: oklch(0.65 0.26 292);
-  --sidebar-primary-foreground: oklch(0.99 0 0);
-  --sidebar-accent: oklch(0.96 0.02 292);
-  --sidebar-accent-foreground: oklch(0.22 0.02 292);
-  --sidebar-border: oklch(0.92 0 0);
-  --sidebar-ring: oklch(0.7 0.1 292);
 }
 
-/* =========================
-   🌙 DARK MODE
-   ========================= */
+/* ======================================================
+   DARK MODE — DEEP UNIVERSE
+====================================================== */
 .dark {
   --background: oklch(0.14 0.01 292);
   --foreground: oklch(0.98 0 0);
@@ -121,39 +114,132 @@
   --secondary: oklch(0.3 0.02 292);
   --secondary-foreground: oklch(0.92 0.01 292);
 
+  --accent: oklch(0.8 0.2 85);
+  --accent-foreground: oklch(0.14 0.01 292);
+
   --muted: oklch(0.28 0.02 292);
   --muted-foreground: oklch(0.7 0.02 292);
-
-  --accent: oklch(0.32 0.03 292);
-  --accent-foreground: oklch(0.98 0 0);
 
   --destructive: oklch(0.72 0.2 25);
 
   --border: oklch(1 0 0 / 12%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.6 0.15 292);
-
-  --chart-1: oklch(0.75 0.24 292);
-  --chart-2: oklch(0.7 0.18 255);
-  --chart-3: oklch(0.8 0.2 85);
-  --chart-4: oklch(0.68 0.22 330);
-  --chart-5: oklch(0.65 0.18 200);
-
-  --sidebar: oklch(0.18 0.01 292);
-  --sidebar-foreground: oklch(0.98 0 0);
-  --sidebar-primary: oklch(0.75 0.24 292);
-  --sidebar-primary-foreground: oklch(0.98 0 0);
-  --sidebar-accent: oklch(0.32 0.03 292);
-  --sidebar-accent-foreground: oklch(0.98 0 0);
-  --sidebar-border: oklch(1 0 0 / 12%);
-  --sidebar-ring: oklch(0.6 0.15 292);
 }
 
+/* ======================================================
+   BASE LAYER (GLOBAL APPLICATION)
+====================================================== */
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
+    font-family: var(--font-primary);
     @apply bg-background text-foreground;
   }
+}
+
+/* ======================================================
+   UTILITIES — BAQEN SIGNATURE EFFECTS
+====================================================== */
+@layer utilities {
+  /* ---------- GLOW ---------- */
+  .glow-primary {
+    box-shadow: 0 0 20px oklch(0.65 0.26 292 / 0.4);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px oklch(0.75 0.18 85 / 0.4);
+  }
+
+  .glow-danger {
+    box-shadow: 0 0 25px oklch(0.6 0.25 25 / 0.45);
+  }
+
+  /* ---------- TEXT GRADIENT ---------- */
+  .text-gold {
+    background: linear-gradient(to bottom right, #fde68a, #d97706);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-pain {
+    background: linear-gradient(to bottom, #f87171, transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* ======================================================
+   BAQEN — HERO CUSTOM STYLES
+====================================================== */
+
+.bg-deep-universe {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(88, 28, 135, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(30, 58, 138, 0.1) 0%, transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(76, 29, 149, 0.05) 0%, transparent 40%),
+    linear-gradient(180deg, #020617 0%, #000000 100%);
+}
+
+.stars-overlay {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 3px),
+    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 2px),
+    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 3px);
+  background-size: 550px 550px, 350px 350px, 250px 250px;
+  background-position: 0 0, 40px 60px, 130px 270px;
+  opacity: 0.1;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.vanishing-card {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 23, 42, 0.95) 0%,
+    rgba(15, 23, 42, 0.7) 50%,
+    rgba(15, 23, 42, 0.1) 100%
+  );
+
+  border-left: 1px solid rgba(139, 92, 246, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
+  mask-image: linear-gradient(to right, black 60%, transparent 100%);
+}
+
+.text-gold-premium {
+  background: linear-gradient(to bottom right, #fde68a 20%, #d97706 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 10px rgba(217, 119, 6, 0.3));
+}
+
+.text-red-fading {
+  background: linear-gradient(to bottom, #f87171 30%, rgba(127, 29, 29, 0) 120%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  filter: blur(0.3px);
+  text-shadow: 0 0 15px rgba(220, 38, 38, 0.4);
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
