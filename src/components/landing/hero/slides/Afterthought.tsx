@@ -16,7 +16,7 @@ export const Afterthought = ({ index }: { index: number }) => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col items-center justify-center text-center relative z-10 mt-2">
         {/* Background Neon Elements - Red/Destructive Theme */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-destructive/5 rounded-full blur-[100px] animate-pulse pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-100 h-100 bg-destructive/5 rounded-full blur-[100px] animate-pulse pointer-events-none" />
 
         {/* Broken Elements Background */}
         <div className="absolute inset-0 pointer-events-none opacity-10">
@@ -25,7 +25,7 @@ export const Afterthought = ({ index }: { index: number }) => {
         </div>
 
         <div className="relative space-y-8 max-w-5xl mx-auto">
-          <p className="text-lg md:text-2xl text-white/60 font-light max-w-2xl mx-auto">
+          <p className="text-lg md:text-2xl italic font-display text-white/60 font-light max-w-2xl mx-auto">
             "Jika semua itu berakhir dilupakan,"
           </p>
 
