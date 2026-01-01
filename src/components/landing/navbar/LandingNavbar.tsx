@@ -58,7 +58,7 @@ export const LandingNavbar = () => {
           </button>
           <button className="relative px-6 py-2 rounded-lg border text-sm font-medium text-white overflow-hidden group transition-all duration-300 bg-white/10 border-primary/30 shadow-[0_0_20px_rgba(124,58,237,0.15)]">
             <span className="relative z-10">Pendaftaran</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="absolute inset-0 bg-linear-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
           </button>
         </div>
 
@@ -78,7 +78,7 @@ export const LandingNavbar = () => {
       {/* Mobile Menu Dropdown */}
       <div
         className={`md:hidden absolute top-full left-0 right-0 bg-[#0f0720]/95 backdrop-blur-xl border-b border-white/10 transition-all duration-300 ease-in-out overflow-hidden ${
-          isMenuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
+          isMenuOpen ? "max-h-100 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="flex flex-col p-6 gap-4">
