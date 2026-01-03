@@ -16,27 +16,16 @@ export const Meaning = ({ index }: { index: number }) => {
       {/* Main Content */}
       <div className="flex-1 flex flex-col items-center justify-center text-center relative z-10 mt-2">
         {/* Background Neon Elements - Gold/Accent Theme */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-accent/10 rounded-full blur-[100px] animate-pulse pointer-events-none" />
-        
-        {/* Starfield Background */}
-        <div className="absolute inset-0 pointer-events-none">
-            {[...Array(6)].map((_, i) => (
-                <div key={i} className={`absolute w-1 h-1 bg-accent rounded-full animate-twinkle`} style={{
-                    top: `${Math.random() * 80 + 10}%`,
-                    left: `${Math.random() * 80 + 10}%`,
-                    animationDelay: `${Math.random() * 2}s`
-                }} />
-            ))}
-        </div>
-
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-100 h-100 bg-accent/10 rounded-full blur-[100px] animate-pulse pointer-events-none" />
+      
         <div className="relative space-y-8 max-w-5xl mx-auto">
-          <h2 className="font-serif text-3xl md:text-5xl text-white/90 font-light tracking-wide leading-tight">
+          <h2 className="font-serif text-xl md:text-3xl text-white/90 font-light tracking-wide mt-4">
             APA MAKNA DARI
           </h2>
           
           <div className="relative group">
             {/* Main Glowing Text */}
-            <h1 className="relative z-10 font-display font-black text-5xl sm:text-6xl md:text-8xl text-transparent bg-clip-text bg-gradient-to-b from-amber-200 via-accent to-yellow-600 drop-shadow-[0_0_35px_rgba(251,191,36,0.5)] tracking-tight leading-tight transition-all duration-700 group-hover:tracking-normal group-hover:scale-105">
+            <h1 className="relative z-10 font-display font-black text-3xl sm:text-4xl md:text-6xl text-transparent bg-clip-text bg-linear-to-b from-amber-200 via-accent to-yellow-600 drop-shadow-[0_0_35px_rgba(251,191,36,0.5)] tracking-tight leading-12 transition-all duration-700 group-hover:tracking-normal group-hover:scale-105">
               SEMUA PERJUANGAN ITU?
             </h1>
             
