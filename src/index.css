@@ -822,14 +822,106 @@
   }
 }
 
+/* --- GLASS CARDS --- */
+.glass-panel {
+  background: rgba(15, 20, 30, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* --- CONTRIBUTION PRESETS (SHARDS) --- */
+.shard-card {
+  background: linear-gradient(
+    160deg,
+    rgba(20, 25, 35, 0.6) 0%,
+    rgba(5, 5, 10, 0.4) 100%
+  );
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.shard-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top right,
+    var(--glow-color),
+    transparent 70%
+  );
+  opacity: 0.2;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.shard-card:hover,
+.shard-card:active {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -5px var(--glow-color);
+  background: linear-gradient(
+    160deg,
+    rgba(25, 30, 45, 0.8) 0%,
+    rgba(10, 10, 20, 0.6) 100%
+  );
+}
+.shard-card:hover::before {
+  opacity: 0.4;
+}
+
+/* Color Config */
+.shard-green {
+  --border-color: rgba(16, 185, 129, 0.3);
+  --glow-color: rgba(16, 185, 129, 0.2);
+  --text-color: #34d399;
+}
+.shard-blue {
+  --border-color: rgba(59, 130, 246, 0.3);
+  --glow-color: rgba(59, 130, 246, 0.2);
+  --text-color: #60a5fa;
+}
+.shard-purple {
+  --border-color: rgba(168, 85, 247, 0.3);
+  --glow-color: rgba(168, 85, 247, 0.2);
+  --text-color: #c084fc;
+}
+.shard-gold {
+  --border-color: rgba(245, 158, 11, 0.3);
+  --glow-color: rgba(245, 158, 11, 0.2);
+  --text-color: #fbbf24;
+}
+
+/* Input Styling */
+.clean-input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: "JetBrains Mono", monospace;
+  width: 100%;
+  padding: 8px 0;
+  transition: all 0.3s;
+}
+.clean-input:focus {
+  outline: none;
+  border-bottom-color: var(--text-color);
+}
+
 /* Footer Link */
 .footer-link {
-  color: #52525b;
+  color: #6b7280;
   font-size: 0.75rem;
+  letter-spacing: 0.05em;
   transition: color 0.3s;
   border-bottom: 1px solid transparent;
 }
 .footer-link:hover {
-  color: #d4d4d8;
-  border-color: #52525b;
+  color: #fbbf24;
+  border-color: transparent;
 }
