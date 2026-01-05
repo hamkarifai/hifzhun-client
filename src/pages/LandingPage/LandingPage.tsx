@@ -2,6 +2,7 @@
 import { HeroSection } from "@/features/landing/sections/Hero/HeroSection";
 import { SolutionSection } from "@/features/landing/sections/Solutions/SolutionSection";
 import { MetodologiSection } from "@/features/landing/sections/Metodologi/MetodologiSection";
+import { FeatureSection } from "@/features/landing/sections/FeatureSection/FeatureSection";
 
 export const LandingPage = () => {
   return (
@@ -9,6 +10,7 @@ export const LandingPage = () => {
       <HeroSection />
       <SolutionSection />
       <MetodologiSection />
+      <FeatureSection />
     </div>
   );
 };
