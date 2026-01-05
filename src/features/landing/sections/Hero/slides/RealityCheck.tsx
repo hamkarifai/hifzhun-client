@@ -1,4 +1,4 @@
-import { SlideContainer } from "@/components/shared/SlideContainer";
+import { SlideContainer } from "@/shared/utils/SlideContainer";
 
 export const RealityCheckSlide = ({ index }: { index: number }) => (
   <SlideContainer>

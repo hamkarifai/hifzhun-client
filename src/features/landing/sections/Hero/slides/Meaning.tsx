@@ -1,4 +1,4 @@
-import { SlideContainer } from "@/components/shared/SlideContainer";
+import { SlideContainer } from "@/shared/utils/SlideContainer";
 import { Stars, Sparkles, Gem, Crown } from "lucide-react";
 
 export const Meaning = ({ index }: { index: number }) => {

@@ -1,6 +1,6 @@
 import "@/styles/landing.css"
-import { LandingFooter } from "@/components/landing/footer/LandingFooter";
-import { LandingNavbar } from "@/components/landing/navbar/LandingNavbar";
+import { LandingFooter } from "@/features/landing/components/footer/LandingFooter";
+import { LandingNavbar } from "@/features/landing/components/navbar/LandingNavbar";
 import { Outlet } from "react-router";
 
 export const LandingLayout = () => {

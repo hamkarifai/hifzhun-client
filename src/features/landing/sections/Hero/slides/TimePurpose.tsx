@@ -1,4 +1,4 @@
-import { SlideContainer } from "@/components/shared/SlideContainer";
+import { SlideContainer } from "@/shared/utils/SlideContainer";
 import { Target, Zap, Award, Crosshair } from "lucide-react";
 
 export const TimePurpose = ({ index }: { index: number }) => {

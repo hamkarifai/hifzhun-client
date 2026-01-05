@@ -1,16 +1,16 @@
-import { HeroNavButton } from "./hero/HeroNavButton";
-import { RealityCheckSlide } from "./hero/slides/RealityCheck";
-import { TimeAnalysis } from "./hero/slides/TimeAnalysis";
-import { TimePurpose } from "./hero/slides/TimePurpose";
-import { Reflection } from "./hero/slides/Reflection";
-import { useHeroSlider } from "./hero/useHeroSlider";
-import { HeroPagination } from "./hero/HeroPagination";
-import { Afterthought } from "./hero/slides/Afterthought";
-import { Essence } from "./hero/slides/Essence";
-import { Meaning } from "./hero/slides/Meaning";
-import { Conclusion } from "./hero/slides/Conclusion";
+import { HeroNavButton } from "./HeroNavButton";
+import { useHeroSlider } from "./useHeroSlider";
+import { HeroPagination } from "./HeroPagination";
+import { Afterthought } from "./slides/Afterthought";
+import { Essence } from "./slides/Essence";
+import { Meaning } from "./slides/Meaning";
+import { Conclusion } from "./slides/Conclusion";
+import { RealityCheckSlide } from "./slides/RealityCheck";
+import { TimeAnalysis } from "./slides/TimeAnalysis";
+import { TimePurpose } from "./slides/TimePurpose";
+import { Reflection } from "./slides/Reflection";
 
-export const LandingHero = () => {
+export const HeroSection = () => {
   const { sliderRef, activeIndex, slideCount, goTo, next, prev } =
     useHeroSlider({ slideCount: 8 });
 
@@ -49,7 +49,7 @@ export const LandingHero = () => {
             <TimeAnalysis index={2} />
 
             {/* SLIDE 3 */}
-            <TimePurpose index={3} />
+            <TimePurpose index={3} /> 
 
             {/* SLIDE 4 */}
             <Reflection index={4} />

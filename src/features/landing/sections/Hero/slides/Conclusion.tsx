@@ -1,4 +1,4 @@
-import { SlideContainer } from "@/components/shared/SlideContainer";
+import { SlideContainer } from "@/shared/utils/SlideContainer";
 import { AlertTriangle, ArrowDown, Siren, ShieldAlert } from "lucide-react";
 
 export const Conclusion = ({ index }: { index: number }) => {

@@ -1,4 +1,4 @@
-import { SlideContainer } from "@/components/shared/SlideContainer";
+import { SlideContainer } from "@/shared/utils/SlideContainer";
 import { HelpCircle, Search, Brain, Fingerprint } from "lucide-react";
 
 export const Reflection = ({ index }: { index: number }) => {

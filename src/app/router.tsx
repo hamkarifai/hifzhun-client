@@ -1,8 +1,8 @@
-import { LoginPage } from "@/app/pages/auth/LoginPage";
+import { LoginPage } from "@/pages/auth/LoginPage";
 import { createBrowserRouter } from "react-router";
 import App from "./App";
-import { LandingLayout } from "./layouts/LandingLayout";
-import { LandingPage } from "./pages/landing/LandingPage";
+import { LandingLayout } from "../layouts/LandingLayout";
+import { LandingPage } from "../pages/LandingPage/LandingPage";
 
 export const router = createBrowserRouter([
   {
