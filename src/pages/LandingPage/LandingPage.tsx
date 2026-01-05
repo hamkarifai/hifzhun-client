@@ -1,9 +1,9 @@
-
 import { HeroSection } from "@/features/landing/sections/Hero/HeroSection";
 import { SolutionSection } from "@/features/landing/sections/Solutions/SolutionSection";
 import { MetodologiSection } from "@/features/landing/sections/Metodologi/MetodologiSection";
 import { FeatureSection } from "@/features/landing/sections/FeatureSection/FeatureSection";
 import { InklusivitasSection } from "@/features/landing/sections/Inklusivitas/InklusivitasSection";
+import { CtaSection } from "@/features/landing/sections/CTA/CtaSection";
 import { TestimonialSection } from "@/features/landing/sections/Testimonial/TestimonialSection";
 
 export const LandingPage = () => {
@@ -15,6 +15,7 @@ export const LandingPage = () => {
       <FeatureSection />
       <InklusivitasSection />
       <TestimonialSection />
+      <CtaSection />
     </div>
   );
 };
