@@ -36,7 +36,7 @@ export const PriceSection = () => {
   return (
     <div className="flex flex-col">
       <section
-        id="kontribusi"
+        id="biaya"
         className="relative w-full max-w-5xl mx-auto px-6 md:px-12 py-32 z-10"
       >
         {/* 1. HEADER & NARASI UTAMA (REVISED LAYOUT) */}
