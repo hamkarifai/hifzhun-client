@@ -4,9 +4,9 @@ export const LandingFooter = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-center gap-2 mb-6 opacity-80">
           <div className="w-6 h-6 bg-purple-600 rounded-lg flex items-center justify-center text-white text-xs font-bold shadow-[0_0_10px_rgba(147,51,234,0.5)]">
-            F
+            B
           </div>
-          <span className="font-bold text-white">FSRS.edu</span>
+          <span className="font-bold text-white">BAQEN</span>
         </div>
         <div className="flex justify-center gap-8 mb-8 text-sm font-medium text-purple-200/60">
           <a href="#" className="hover:text-purple-400 transition-colors">
