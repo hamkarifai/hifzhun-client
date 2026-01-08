@@ -23,8 +23,7 @@ export const LandingFooter = () => {
           </a>
         </div>
         <p className="text-purple-200/40 text-sm">
-          &copy; {new Date().getFullYear()} FSRS Education Platform. Dibuat
-          dengan <span className="text-red-500">❤</span> untuk penuntut ilmu.
+          &copy; {new Date().getFullYear()} BAQEN. Dibuat untuk penuntut ilmu.
         </p>
       </div>
     </footer>
