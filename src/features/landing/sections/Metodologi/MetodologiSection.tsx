@@ -13,11 +13,11 @@ export const MetodologiSection = () => {
         {/* HEADER */}
         <div className="text-center mb-28">
           <div className="inline-flex items-center gap-3 mb-4 opacity-80">
-            <span className="h-px w-8 bg-gradient-to-r from-transparent to-amber-500"></span>
+            <span className="h-px w-8 bg-linear-gradient-to-r from-transparent to-amber-500"></span>
             <span className="font-display text-[10px] text-amber-500 tracking-[0.3em] uppercase drop-shadow-[0_0_12px_rgba(245,158,11,0.8)]">
               Metodologi
             </span>
-            <span className="h-px w-8 bg-gradient-to-l from-transparent to-amber-500"></span>
+            <span className="h-px w-8 bg-linear-gradient-to-l from-transparent to-amber-500"></span>
           </div>
           <h2 className="font-serif text-3xl md:text-5xl text-white mb-6 tracking-wide">
             Cara Kerja{" "}
@@ -39,10 +39,10 @@ export const MetodologiSection = () => {
         {/* STEPS GRID */}
         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 pt-6">
           {/* Energy Stream (Desktop Only) */}
-          <div className="hidden md:block absolute top-1/2 left-[5%] w-[90%] h-px bg-gradient-to-r from-transparent via-blue-500/20 via-amber-500/30 via-emerald-500/20 to-transparent -translate-y-1/2 z-0"></div>
-          <div className="hidden md:block absolute top-1/2 left-0 w-[60px] h-[2px] bg-gradient-to-r from-transparent via-white/80 to-transparent shadow-[0_0_20px_rgba(255,255,255,0.8)] -translate-y-1/2 z-1 animate-[dataFlow_3s_infinite_ease-in-out]"></div>
+          <div className="hidden md:block absolute top-1/2 left-[5%] w-[90%] h-px bg-linear-gradient-to-r from-transparent via-blue-500/20 via-amber-500/30 via-emerald-500/20 to-transparent -translate-y-1/2 z-0"></div>
+          <div className="hidden md:block absolute top-1/2 left-0 w-[60px] h-[2px] bg-linear-to-r from-transparent via-white/80 to-transparent shadow-[0_0_20px_rgba(255,255,255,0.8)] -translate-y-1/2 z-1 animate-[dataFlow_3s_infinite_ease-in-out]"></div>
 
-          <div className="p-8 rounded-2xl relative flex flex-col items-center text-center group bg-[#0a0f1e]/40 border border-white/10 backdrop-blur-[20px] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-10px_rgba(59,130,246,0.15)] hover:border-blue-500/50">
+          <div className="p-8 rounded-2xl relative flex flex-col items-center text-cente  r group bg-[#0a0f1e]/40 border border-white/10 backdrop-blur-[20px] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-10px_rgba(59,130,246,0.15)] hover:border-blue-500/50">
             {/* Nebula Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full blur-[60px] bg-blue-500/40 opacity-0 transition-opacity duration-800 -z-10 group-hover:opacity-40"></div>
 
