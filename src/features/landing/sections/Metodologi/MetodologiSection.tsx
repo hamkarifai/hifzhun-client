@@ -39,7 +39,7 @@ export const MetodologiSection = () => {
         {/* STEPS GRID */}
         <div className="relative grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 pt-6">
           {/* Energy Stream (Desktop Only) */}
-          <div className="hidden md:block absolute top-1/2 left-[5%] w-[90%] h-px bg-linear-gradient-to-r from-transparent via-blue-500/20 via-amber-500/30 via-emerald-500/20 to-transparent -translate-y-1/2 z-0"></div>
+          <div className="hidden md:block absolute top-1/2 left-[5%] w-[90%] h-px bg-linear-gradient-to-r from-transparent via-amber-500/30 to-transparent -translate-y-1/2 z-0"></div>
           <div className="hidden md:block absolute top-1/2 left-0 w-[60px] h-[2px] bg-linear-to-r from-transparent via-white/80 to-transparent shadow-[0_0_20px_rgba(255,255,255,0.8)] -translate-y-1/2 z-1 animate-[dataFlow_3s_infinite_ease-in-out]"></div>
 
           <div className="p-8 rounded-2xl relative flex flex-col items-center text-cente  r group bg-[#0a0f1e]/40 border border-white/10 backdrop-blur-[20px] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-10px_rgba(59,130,246,0.15)] hover:border-blue-500/50">
@@ -65,7 +65,7 @@ export const MetodologiSection = () => {
             </p>
           </div>
 
-          <div className="p-8 rounded-2xl relative flex flex-col items-center text-center md:-translate-y-8 border-amber-500/30 group mt-8 md:mt-0 bg-[#0a0f1e]/40 border border-white/10 backdrop-blur-[20px] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] transition-all duration-500 hover:-translate-y-12 hover:shadow-[0_30px_60px_-10px_rgba(245,158,11,0.15)] hover:border-amber-500/50">
+          <div className="p-8 rounded-2xl relative flex flex-col items-center text-center md:-translate-y-8 border-white/10 group mt-8 md:mt-0 bg-[#0a0f1e]/40 border  backdrop-blur-[20px] shadow-[0_20px_40px_-10px_rgba(0,0,0,0.6)] transition-all duration-500 hover:-translate-y-12 hover:shadow-[0_30px_60px_-10px_rgba(245,158,11,0.15)] hover:border-amber-500/50">
             {/* Nebula Glow */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full blur-[60px] bg-amber-500/40 opacity-0 transition-opacity duration-800 -z-10 group-hover:opacity-15"></div>
 
@@ -73,7 +73,7 @@ export const MetodologiSection = () => {
               02
             </div>
 
-            <div className="mb-6 mt-6 w-16 h-16 rounded-full bg-amber-900/10 border border-amber-500/30 flex items-center justify-center group-hover:bg-amber-900/30 transition-colors duration-500 shadow-[0_0_20px_rgba(245,158,11,0.15)]">
+            <div className="mb-6 mt-6 w-16 h-16 rounded-full bg-amber-900/10 border border-white/10flex items-center justify-center group-hover:bg-amber-900/30 transition-colors duration-500 shadow-[0_0_20px_rgba(245,158,11,0.15)]">
               <BarChart2 className="w-8 h-8 text-amber-500 drop-shadow-[0_0_12px_rgba(245,158,11,0.8)] transition-transform duration-500 group-hover:scale-110" />
             </div>
 
